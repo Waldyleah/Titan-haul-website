@@ -342,7 +342,6 @@ box-shadow:0 10px 24px rgba(0,0,0,.35)}
 }
 
 </style>
-
 <style id="premium-upgrades">
 .projects-grid{grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:30px}
 .project-card{transition:transform .35s ease,box-shadow .35s ease;overflow:hidden}
@@ -357,6 +356,15 @@ box-shadow:0 10px 24px rgba(0,0,0,.35)}
 @media(max-width:768px){.project-card img{height:260px}}
 </style>
 
+<style id="quote-form-style">
+.quote-wrap{max-width:900px;margin:0 auto}
+.quote-form{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:40px}
+.quote-form input,.quote-form select,.quote-form textarea{width:100%;padding:15px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:#121a2e;color:#eef1f6}
+.quote-form textarea{grid-column:1/-1;min-height:140px}
+.quote-form .full{grid-column:1/-1}
+.quote-form button{grid-column:1/-1;padding:16px;border:none;border-radius:12px;background:#2f7dff;color:#fff;font-weight:700;cursor:pointer}
+@media(max-width:700px){.quote-form{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 <header>
@@ -565,41 +573,37 @@ box-shadow:0 10px 24px rgba(0,0,0,.35)}
 <a class="btn btn-primary" href="tel:8603086436">Call Now</a>
 </div>
 </section>
-
 <section class="projects-section" id="gallery">
-  <div class="section-inner">
-    <div class="section-head">
-      <div class="kicker">Recent Projects</div>
-      <h2 class="section-title">Recent Projects</h2>
-      <p class="section-sub">Real before-and-after projects completed by Titan Haul Services LLC.</p>
-    </div>
-
-    <div class="projects-grid">
-      <article class="project-card">
-        <div class="project-image-wrap"><img src="https://raw.githubusercontent.com/Waldyleah/Titan-haul-website/main/Image1.png" alt="Property cleanout before and after" loading="lazy"/>
-        <div class="project-copy">
-          <h3>Residential &amp; Commercial Junk Removal</h3>
-          <p>Before-and-after junk removal projects for homes and businesses throughout Connecticut.</p>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-image-wrap"><img src="https://raw.githubusercontent.com/Waldyleah/Titan-haul-website/main/Image2.png" alt="Garage cleanout before and after" loading="lazy"/>
-        <div class="project-copy">
-          <h3>Garage Cleanout</h3>
-          <p>We removed unwanted furniture, boxes, and debris to restore this garage to a clean, usable space.</p>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-image-wrap"><img src="https://raw.githubusercontent.com/Waldyleah/Titan-haul-website/main/Image3.png" alt="Residential and commercial junk removal projects" loading="lazy"/>
-        <div class="project-copy">
-          <h3>Property Cleanout</h3>
-          <p>Complete outdoor property cleanup with junk, debris, and bulk items removed, leaving the area clean and ready to use.</p>
-        </div>
-      </article>
-    </div>
-  </div>
+<div class="section-inner">
+<div class="section-head">
+<div class="kicker">Recent Projects</div>
+<h2 class="section-title">Recent Projects</h2>
+<p class="section-sub">Real before-and-after projects completed by Titan Haul Services LLC.</p>
+</div>
+<div class="projects-grid">
+<article class="project-card">
+<div class="project-image-wrap"><img alt="Property cleanout before and after" loading="lazy" src="https://raw.githubusercontent.com/Waldyleah/Titan-haul-website/main/Image1.png"/>
+<div class="project-copy">
+<h3>Residential &amp; Commercial Junk Removal</h3>
+<p>Before-and-after junk removal projects for homes and businesses throughout Connecticut.</p>
+</div>
+</div></article>
+<article class="project-card">
+<div class="project-image-wrap"><img alt="Garage cleanout before and after" loading="lazy" src="https://raw.githubusercontent.com/Waldyleah/Titan-haul-website/main/Image2.png"/>
+<div class="project-copy">
+<h3>Garage Cleanout</h3>
+<p>We removed unwanted furniture, boxes, and debris to restore this garage to a clean, usable space.</p>
+</div>
+</div></article>
+<article class="project-card">
+<div class="project-image-wrap"><img alt="Residential and commercial junk removal projects" loading="lazy" src="https://raw.githubusercontent.com/Waldyleah/Titan-haul-website/main/Image3.png"/>
+<div class="project-copy">
+<h3>Property Cleanout</h3>
+<p>Complete outdoor property cleanup with junk, debris, and bulk items removed, leaving the area clean and ready to use.</p>
+</div>
+</div></article>
+</div>
+</div>
 </section>
 <section id="reviews">
 <div class="section-inner">
@@ -620,11 +624,10 @@ box-shadow:0 10px 24px rgba(0,0,0,.35)}
 <h2 class="section-title">Trusted by Connecticut Customers</h2>
 </div>
 <div class="review-premium">
-<div class="review-box">★★★★★<br><br>"Fast, professional and affordable. Highly recommend Titan Haul Services!"</div>
-<div class="review-box">★★★★★<br><br>"Excellent communication and left everything spotless."</div>
-<div class="review-box">★★★★★<br><br>"On time, fair pricing, and great service from start to finish."</div>
+<div class="review-box">★★★★★<br/><br/>"Fast, professional and affordable. Highly recommend Titan Haul Services!"</div>
+<div class="review-box">★★★★★<br/><br/>"Excellent communication and left everything spotless."</div>
+<div class="review-box">★★★★★<br/><br/>"On time, fair pricing, and great service from start to finish."</div>
 </div>
-
 <div class="section-head" style="margin-top:70px">
 <div class="kicker">Why Choose Titan</div>
 <h2 class="section-title">Real Projects. Real Results.</h2>
@@ -632,19 +635,41 @@ box-shadow:0 10px 24px rgba(0,0,0,.35)}
 <div class="why-grid2">
 <div class="why-box">🛡️<h3>Fully Insured</h3><p>Professional protection for residential and commercial jobs.</p></div>
 <div class="why-box">⚡<h3>Same-Day Service</h3><p>Fast response whenever scheduling allows.</p></div>
-<div class="why-box">🏠<h3>Residential & Commercial</h3><p>Homes, apartments, offices, warehouses and more.</p></div>
+<div class="why-box">🏠<h3>Residential &amp; Commercial</h3><p>Homes, apartments, offices, warehouses and more.</p></div>
 <div class="why-box">💲<h3>Transparent Pricing</h3><p>Upfront estimates with no hidden fees.</p></div>
 </div>
 </div>
 </section>
+
+<section class="cta" id="quote">
+<div class="section-inner quote-wrap">
+<div class="section-head">
+<div class="kicker">Free Estimate</div>
+<h2 class="section-title">Request a Free Quote</h2>
+<p class="section-sub">Tell us about your project and we'll get back to you as soon as possible.</p>
+</div>
+<form action="https://api.web3forms.com/submit" class="quote-form" method="POST">
+<input name="access_key" type="hidden" value="bc3160be-a9b5-49f0-92c4-5d209be393f6"/>
+<input name="name" placeholder="Full Name" required=""/>
+<input name="phone" placeholder="Phone Number" required=""/>
+<input name="email" placeholder="Email Address" required="" type="email"/>
+<select name="service" required="">
+<option value="">Select a Service</option>
+<option>Junk Removal</option><option>Garage Cleanout</option><option>Furniture Removal</option>
+<option>Appliance Removal</option><option>Property Cleanout</option>
+<option>Commercial Hauling</option><option>Delivery Services</option><option>Other</option>
+</select>
+<input class="full" name="address" placeholder="Service Address"/>
+<input class="full" name="preferred_date" type="date"/>
+<textarea name="message" placeholder="Describe your project..." required=""></textarea>
+<button type="submit">REQUEST MY FREE QUOTE</button>
+</form>
+</div></section>
 <footer>
 <div class="footer-inner">
 <div class="f-logo"><img alt="Titan Haul Services" src="data:image/webp;base64,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"/><span>© <span id="year"></span> Titan Haul Services LLC — Manchester, CT</span></div>
 <span>(860) 308-6436 · Mon–Sat 7am–7pm</span>
 </div>
-
-
-
 </footer>
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
